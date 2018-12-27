@@ -9,17 +9,41 @@
 
 header {
     width: 100%;
-    height: pxTorem(44px);
+    height: auto;
     @include box_flex;
     @include justify(space-between);
     @include align;
     font-size: pxTorem(18px);
+    img {
+        width: 100%;
+        height: auto;
+    }
 }
 
 section {
     width: 100%;
     flex: 1;
     overflow: auto;
+    .conter {
+        width: 100%;
+        height: auto;
+        @include box_flex;
+        flex-wrap: wrap;
+        dl {
+            width: 25%;
+            height: auto;
+            text-align: center;
+            dd {
+                img {
+                    width: pxTorem(65px);
+                    height: pxTorem(65px);
+                }
+            }
+            dt {
+                color: #ccc;
+            }
+        }
+    }
 }
 
 footer {
