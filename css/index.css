@@ -214,6 +214,86 @@ section {
   overflow: auto;
 }
 
+section .main {
+  width: 100%;
+  height: 5.33333rem;
+}
+
+section .main .top {
+  padding: 0 0.4rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-align-items: center;
+  align-items: center;
+  height: 1.33333rem;
+  font-size: 0.42667rem;
+}
+
+section .main .div {
+  padding-left: 0.4rem;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%;
+  overflow-x: scroll;
+  height: 4rem;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+}
+
+section .main .div dl {
+  flex-shrink: 0;
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  width: 2.66667rem;
+  height: 4rem;
+}
+
+section .main .div dl dt {
+  width: 100%;
+  height: 70%;
+}
+
+section .main .div dl dt img {
+  width: 100%;
+  height: 100%;
+}
+
+section .main .div dl dd {
+  display: flex;
+  /* NEW, Spec - Opera 12.1, Firefox 20+ */
+  display: -webkit-flex;
+  /* NEW - Chrome */
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+section .main .div dl dd p {
+  font-size: 0.37333rem;
+}
+
 footer {
   width: 100%;
   height: 1.33333rem;
