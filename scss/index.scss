@@ -80,6 +80,57 @@
                 }
             }
         }
+        .main {
+            width: 100%;
+            height: pxTorem(200px);
+            .top {
+                padding: 0 pxTorem(15px);
+                @include sizing;
+                width: 100%;
+                @include box_flex;
+                @include align;
+                height: pxTorem(50px);
+                font-size: pxTorem(16px);
+            }
+            .div {
+                padding-left: pxTorem(15px);
+                @include sizing;
+                width: 100%;
+                overflow-x: scroll;
+                height: pxTorem(150px);
+                @include box_flex;
+                //  @include flex;
+                dl {
+                    flex-shrink: 0;
+                    @include box_flex;
+                    @include direction(column);
+                    @include align;
+                    @include justify;
+                    width: pxTorem(90px);
+                    height: pxTorem(150px);
+                    dt {
+                        width: 90%;
+                        height: 70%;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    dd {
+                        @include box_flex;
+                        @include align;
+                        @include justify;
+                        p {
+                            font-size: pxTorem(14px);
+                            width: 100%;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: clip;
+                        }
+                    }
+                }
+            }
+        }
     }
     
     footer {
